@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:50505/orderService  # connection link to database
+    username: orderService
+    password: 2017ikedi
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:                         # jpa properties
+    hibernate:
+      ddl-auto: update   # create and destroy the schema when the application stops
+    show-sql: true            # when spring JPA performs a query, it should show in console
+    database-platform: org.hibernate.dialect.MySQLDialect
+
